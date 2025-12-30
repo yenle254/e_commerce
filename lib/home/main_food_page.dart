@@ -1,4 +1,5 @@
 
+import 'package:e_commerce/home/food_page_body.dart';
 import 'package:e_commerce/utils/colors.dart';
 import 'package:e_commerce/widgets/big_text.dart';
 import 'package:e_commerce/widgets/small_text.dart';
@@ -18,7 +19,6 @@ class _MainFoodPageState extends State<MainFoodPage> {
       body: Column(
         children: [
           Container(
-
             child: Container(
               margin: EdgeInsets.only(top: 45, bottom: 15),
               padding: EdgeInsets.only(left: 20,right: 20),
@@ -49,8 +49,9 @@ class _MainFoodPageState extends State<MainFoodPage> {
                   )
                 ],
               ),
-            ),
-          )
+            )
+          ),
+          FoodPageBody(),
         ],
       ),
     );
