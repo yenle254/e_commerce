@@ -7,7 +7,7 @@ import 'package:flutter/foundation.dart'; // Để dùng kIsWeb
 void main() {
   runApp(
     DevicePreview(
-      enabled: !kReleaseMode,
+      enabled: !kReleaseMode && kIsWeb,
       builder: (context) => const MyApp(), // Chạy MyApp bên trong DevicePreview
     ),
   );
@@ -20,16 +20,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // --- Các dòng cần thêm cho Device Preview ---
+      // thêm Device Preview
       // useInheritedMediaQuery: true,
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
 
-      // ------------------------------------------
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        // Đã sửa lỗi thiếu ColorScheme ở đây
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
@@ -38,4 +36,4 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// Widget giả lập để code không báo lỗi
+
