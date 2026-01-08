@@ -15,9 +15,11 @@ class MainFoodPage extends StatefulWidget {
 class _MainFoodPageState extends State<MainFoodPage> {
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       body: Column(
         children: [
+          //hiển thị header
           Container(
             child: Container(
               margin: EdgeInsets.only(top: 45, bottom: 15),
@@ -51,6 +53,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
               ),
             )
           ),
+          //hiển thị body
           FoodPageBody(),
         ],
       ),

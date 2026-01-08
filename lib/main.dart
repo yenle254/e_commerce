@@ -3,7 +3,7 @@ import 'package:e_commerce/home/main_food_page.dart';
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart'; // Để dùng kIsWeb
-
+import 'package:get/get.dart';
 void main() {
   runApp(
     DevicePreview(
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       // thêm Device Preview
       // useInheritedMediaQuery: true,
       locale: DevicePreview.locale(context),
