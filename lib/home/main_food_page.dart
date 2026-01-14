@@ -55,7 +55,11 @@ class _MainFoodPageState extends State<MainFoodPage> {
             )
           ),
           //hiển thị body
-          FoodPageBody(),
+          Expanded(
+            child: SingleChildScrollView(
+              child: FoodPageBody(),
+            ),
+          ),
         ],
       ),
     );
