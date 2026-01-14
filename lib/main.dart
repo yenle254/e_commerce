@@ -1,5 +1,6 @@
+import 'package:e_commerce/pages/food/popular_food_detail.dart';
 import 'package:flutter/material.dart';
-import 'package:e_commerce/home/main_food_page.dart';
+import 'package:e_commerce/pages/home/main_food_page.dart';
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart'; // Để dùng kIsWeb
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MainFoodPage(),
+      home: PopularFoodDetail(),
     );
   }
 }

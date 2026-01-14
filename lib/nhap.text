@@ -1,21 +1,75 @@
-void main() {
-  runApp(const MyApp());
-}
+class Dimensions {
+  static double screenHeight = Get.context!.height;
+  static double screenWidth= Get.context!.width;
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  static double pageView = screenHeight/3.11;
+  static double pageViewContainer = screenHeight/4.53;
+  static double pageViewTextContainer = screenHeight/8.31;
 
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
+//dynamic height padding and margin
+  static double height10 = screenHeight/99.73;
+  static double height15 = screenHeight/66.49;
+  static double height20 = screenHeight/49.87;
+  static double height30 = screenHeight/33.24;
+  static double height45 = screenHeight/22.16;
 
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: MainFoodPage(),
-    );
-  }
-}
+//dynamic width padding and margin
+  static double width10 = screenHeight/99.73;
+  static double width15 = screenHeight/66.49;
+  static double width20 = screenHeight/49.87;
+  static double width30 = screenHeight/33.24;
+  static double width45 = screenHeight/22.16;
+
+  static double font20 = screenHeight/49.87;
+
+//radius
+  static double radius15 = screenHeight/66.49;
+  static double radius20 = screenHeight/49.87;
+  static double radius30 = screenHeight/33.24;
+
+//icon Size
+  static double iconSize24 =  screenHeight/41.55;
+
+//líst view size 390
+  static double listViewImgSize = screenWidth/3.25;
+  static double listViewTextContSize= screenWidth/3.9;
+
+flutter emulators --launch Pixel_9_Pro_XL
+844
+997.3333333333334
+
+class Dimensions {
+  static double screenHeight = Get.context!.height;
+  static double screenWidth= Get.context!.width;
+
+  static double pageView = screenHeight/2.64;
+  static double pageViewContainer = screenHeight/3.84;
+  static double pageViewTextContainer = screenHeight/7.03;
+
+//dynamic height padding and margin
+  static double height10 = screenHeight/84.4;
+  static double height15 = screenHeight/56.27;
+  static double height20 = screenHeight/28.13;
+  static double height30 = screenHeight/33.24;
+  static double height45 = screenHeight/18.75;
+
+//dynamic width padding and margin
+  static double width10 = screenHeight/84.4;
+  static double width15 = screenHeight/56.27;
+  static double width20 = screenHeight/42.2;
+  static double width30 = screenHeight/28.13;
+  static double width45 = screenHeight/18.75;
+
+  static double font20 = screenHeight/42.2;
+
+//radius
+  static double radius15 = screenHeight/56.27;
+  static double radius20 = screenHeight/42.2;
+  static double radius30 = screenHeight/28.13;
+
+//icon Size
+  static double iconSize24 =  screenHeight/35.17;
+
+//líst view size 390
+  static double listViewImgSize = screenWidth/3.25;
+  static double listViewTextContSize= screenWidth/3.9;

@@ -87,11 +87,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
           ),
         ),
         //list of food and images
-        Container(
-          height: 900,
-          child: ListView.builder(
+        ListView.builder(
             physics: NeverScrollableScrollPhysics(),
-            //shrinkWrap: true,
+            shrinkWrap: true,
             itemCount: 10,
             itemBuilder: (context, index) {
               return Container(
@@ -104,10 +102,12 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                   children: [
                     //image section
                     Container(
-                      height: 120,
-                      width: 120,
+                      height: Dimensions.listViewImgSize,
+                      width: Dimensions.listViewImgSize,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(Dimensions.radius20),
+                        borderRadius: BorderRadius.circular(
+                          Dimensions.radius20,
+                        ),
                         color: Colors.white38,
                         image: DecorationImage(
                           fit: BoxFit.cover,
@@ -118,7 +118,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                     //text container
                     Expanded(
                       child: Container(
-                        height: 100,
+                        height: Dimensions.listViewTextContSize,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.only(
                             topRight: Radius.circular(Dimensions.radius20),
@@ -164,13 +164,13 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                           ),
                         ),
                       ),
-                    ), 
+                    ),
                   ],
                 ),
               );
             },
           ),
-        ),
+
       ],
     );
   }
